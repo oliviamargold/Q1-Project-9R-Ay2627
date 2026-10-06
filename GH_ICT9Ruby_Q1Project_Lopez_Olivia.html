@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #fffdf0;
+            color: #42677e;
+            text-align: center;
+        }
+
+      
+        nav {
+            background-color: #7aaad5;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 45px;          
+            height: 45px;         
+            border-radius: 50%;   
+            object-fit: cover;    
+            display: block;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+            padding: 6px 16px;
+            border-radius: 20px;
+            color: white;
+  
+}
+
+
+            nav li:nth-child(1) a { background-color: #ffd1df; color:#2e6885} 
+            nav li:nth-child(2) a { background-color: #654040; color: #ffffff; } 
+            nav li:nth-child(3) a { background-color: #fffee9; color: #4c7e97; } 
+
+
+
+
+        
+        .hero {
+            background-image: url('https://i.pinimg.com/736x/cb/f1/81/cbf18197f539f3d6fbc4d255ba798b2c.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 40px 20px;
+            border-bottom: 4px solid #7aaad5;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #5ca0d9;
+        }
+
+        .highlight-name {
+            color: #3b85aa;
+        }
+
+        .hero h1 {
+            font-size: 26px;
+            margin: 10px 0 5px 0;
+        }
+
+        .hero p {
+            font-style: italic;
+            color: #42677e;
+            margin: 0;
+        }
+
+        .section-banner {
+            background-color: #7aaad5;
+            color: white;
+            padding: 10px;
+            margin: 30px auto 15px auto;
+            width: 250px;
+            border-radius: 8px;
+        }
+
+        .project-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .project-card {
+            border: 2px solid #5ca0d9;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .project-card img {
+            width: 200px;
+            display: block;
+        }
+
+        .project-details {
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .project-details a {
+            color: #2e6885;
+            font-weight: bold;
+        }
+
+        .skills-list {
+            width: 280px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-card {
+            background-color: rgb(215, 238, 255);
+            border: 1px solid #6b849e;
+            border-radius: 8px;
+            width: 320px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+
+        .inline-label {
+            display: inline-block; 
+            margin-right: 8px;                 
+            font-weight: normal;   
+            font-size: 11px;     
+        }
+
+        .submit {
+            width: 100%;
+            background-color: #7aaad5;
+            color: white;
+            border: none;
+            padding: 8px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #7aaad5;
+            color: white;
+            padding: 15px;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+       <a href="#"><img src="logo.png" alt="Logo" class="logo"></a>
+        <ul>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#works">MY WORKS</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <img src="my profile!.webp" alt="Olivia Lopez" class="profile-img">
+        <h1>Hi, I'm <span class="highlight-name">Olivia Lopez!</span></h1>
+        <p>✦ A Montessorian Student ✦</p>
+    </div>
+
+    <div id="about">
+        <h2 class="section-banner">✦ About Me ✦</h2>
+        <p>Hi! I'm <strong>Olivia Lopez</strong>, and I'm learning how to make websites on VSCODE. My favorite part about making websites like this is getting to design and spark my creativty. (˵ •̀ ᴗ - ˵ ) ✧</p>
+    </div>
+
+  
+    <div id="works">
+        <h2 class="section-banner">✦ My Works ✦</h2>
+
+    
+        <div class="project-container">
+            <div class="project-card">
+                <img src="FAVORITE ARTIST.png" alt="Project 1">
+            </div>
+            
+            
+            <div class="project-details">
+                <ul>
+                    <li>☆ HTML & CSS Project</li>
+                    <li>☆ Amazing Spotify Artist</li>
+                    <li>☆ List, Links, and Images</li>
+                   
+                </ul>
+            </div>
+        </div>
+
+    
+        <div class="project-container">
+            <div class="project-card">
+                <img src="RATE A MOVIE.png" alt="Project 2">
+            </div>
+            <div class="project-details">
+                <ul>
+                    <li>☆ HTML & CSS Project</li>
+                    <li>☆ HTML Forms</li>
+                    <li>☆ Movie Reccomendations</li>
+            </div>
+        </div>
+    </div>
+
+   
+    
+    
+    <div id="contact">
+        <h2 class="section-banner">✦ Contact Me ✦</h2>
+        
+        <div class="form-card">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name here">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email here">
+                </div>
+
+                <div class="form-group">
+                <div class="form-group">
+                    <label>How did you find me?</label>
+                <div>
+                    <label style="display:inline; font-weight:normal; font-size:11px;"><input type="radio" name="source" style="width:auto;"> Facebook</label>
+                    <label style="display:inline; font-weight:normal; font-size:11px;"><input type="radio" name="source" style="width:auto;"> Instagram</label>
+                    <label style="display:inline; font-weight:normal; font-size:11px;"><input type="radio" name="source" style="width:auto;"> Friends</label>
+                </div>
+            </div>
+
+
+                <div class="form-group">
+                    <label>Interested In:</label>
+                <div>
+                    <label style="display:inline; font-weight:normal; font-size:11px;"><input type="checkbox" name="interest" style="width:auto;"> Web Design</label>
+                    <label style="display:inline; font-weight:normal; font-size:11px;"><input type="checkbox" name="interest" style="width:auto;"> Graphic Design</label>
+                    <label style="display:inline; font-weight:normal; font-size:11px;"><input type="checkbox" name="interest" style="width:auto;"> Robotics</label>
+                </div>
+            </div>
+        </div>
+                <div class="form-group">
+                    <label for="rating">Rate My Page:</label>
+                    <select id="rating">
+                        <option value="5">5 - AMAZING! ☆</option>
+                        <option value="4">4 - Good!</option>
+                        <option value="3">3 - Okay...</option>
+                        <option value="2">2 - Needs improvement :c</option>
+                        <option value="1">1 - Horrible!</option>
+                    </select>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="message">Feedback:</label>
+                    <textarea id="message" rows="3" placeholder="Leave a comment or suggestion here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Olivia Lopez | 9-Ruby | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
